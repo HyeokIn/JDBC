@@ -1,0 +1,137 @@
+@import "../css/style.css";
+
+
+
+td {
+  max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+
+td:hover {
+  overflow: visible;
+}
+
+h3 {
+  font-family: "Nanum Gothic", "NanumGothic", "나눔고딕";
+}
+
+
+.container {
+  font-size: 80%;
+}
+p {
+  display: inline-block;
+}
+/*search*/
+div.topBox,
+div#search_box {
+  width: 100%;
+  display: inline-block;
+}
+
+div#list_filter_box {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#list_filter_box #semester {
+  padding: 5px;
+  width: 6%;
+  min-width: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f96ba;
+}
+
+#list_filter_box #category {
+  padding: 5px;
+  width: 15%;
+  min-width: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f96ba;
+}
+#list_filter_box #subitem {
+  padding: 5px;
+  width: 15%;
+  min-width: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f96ba;
+}
+#list_filter_box #student {
+  padding: 5px;
+  width: 10%;
+  min-width: 10px;
+  border-radius: 5px;
+  border: 1px solid #6f96ba;
+}
+
+/* input.Search {
+  display: inline-block;
+  float: right;
+  height: 10%;
+  border: 1px solid #6f96ba;
+  color: #6f96ba;
+  background-color: white;
+  border-radius: 10px;
+}
+
+input.Search:hover {
+  color: white;
+  background-color: #6f96ba;
+} */
+
+#SearchInput {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  background-color: white;
+  border: 1px solid #6f96ba;
+  border-radius: 5px;
+}
+#detail {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  ul.studentList li.sL_col1,
+  ul.studentList li.sL_col2,
+  ul.studentList li.sL_col3,
+  ul.studentList li.sL_col4,
+  ul.studentList li.sL_col5,
+  ul.studentList li.sL_col6,
+  ul.studentList li.sL_col7,
+  ul.studentList li.sL_col8 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  ul.studentList li.sL_col1,
+  ul.studentList li.sL_col2,
+  ul.studentList li.sL_col3,
+  ul.studentList li.sL_col4,
+  ul.studentList li.sL_col5,
+  ul.studentList li.sL_col6,
+  ul.studentList li.sL_col7,
+  ul.studentList li.sL_col8 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+  ul.studentList li.sL_col1,
+  ul.studentList li.sL_col2,
+  ul.studentList li.sL_col3,
+  ul.studentList li.sL_col4,
+  ul.studentList li.sL_col5,
+  ul.studentList li.sL_col6 {
+    width: 33%;
+  }
+  ul.studentList li.sL_col7,
+  ul.studentList li.sL_col8 {
+    width: 49.5%;
+  }
+}
